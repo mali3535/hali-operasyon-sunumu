@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mikro Entegre | Halı Operasyonel Mükemmellik</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        
+        /* Hassas Blur Alanları */
+        .blur-overlay {
+            position: absolute;
+            top: 25%; left: 15%; width: 70%; height: 50%;
+            backdrop-filter: blur(12px);
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            pointer-events: none;
+        }
+
+        .step-card { transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+        .step-card:hover { transform: translateY(-10px); }
+        .navy-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); }
+        .orange-highlight { color: #f97316; }
+        .status-pill { @apply px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <header class="navy-gradient text-white py-24 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <h1 class="text-6xl font-black mb-4 tracking-tighter uppercase leading-none">
+                Dijital Halı <br><span class="orange-highlight">Operasyon Üssü</span>
+            </h1>
+            <p class="text-2xl font-light text-slate-300 max-w-2xl border-l-4 border-orange-500 pl-6 mt-8">
+                Hammadde girişinden Aras Kargo teslimatına kadar her ilmeği Mikro ERP ile yönetilen kusursuz bir ekosistem.
+            </p>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-20 px-6 space-y-40">
+
+        <section class="space-y-12">
+            <div class="max-w-4xl">
+                <h2 class="text-4xl font-extrabold mb-6 flex items-center gap-4">
+                    <span class="text-blue-600 italic">01.</span> Stratejik Tedarik ve EAN Mimarisi
+                </h2>
+                <p class="text-xl text-slate-600 leading-relaxed italic">
+                    "Her şey bir planla başlar. Planlama Uzmanımız, dev top halıların siparişini Mikro üzerinden kurgularken sistem her kalem için eşsiz bir dijital kimlik üretir."
+                </p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-10">
+                <div class="relative group">
+                    <p class="text-xs font-bold text-slate-400 mb-2 uppercase">Yazılım Ekranı (Güvenli Alan)</p>
+                    <div class="relative overflow-hidden rounded-2xl shadow-2xl border border-slate-200">
+                        <img src="siparişoluşturma.jpg" class="w-full" alt="Sipariş Giriş">
+                        <div class="blur-overlay"></div> </div>
+                </div>
+                <div class="relative group">
+                    <p class="text-xs font-bold text-slate-400 mb-2 uppercase">Operasyon Hikayesi</p>
+                    <img src="tedarik.jpg" class="rounded-2xl shadow-2xl border border-orange-100" alt="Tedarik Çizim">
+                </div>
+            </div>
+            <div class="bg-blue-50 p-8 rounded-2xl border-l-8 border-blue-600">
+                <p class="text-slate-700 leading-relaxed">
+                    Tedarikçiye iletilen otomatik Excel listeleri, ürünlerin henüz yoldayken sizin barkodlarınızla kimliklenmesini sağlar. Ürün kapıya ulaştığında kimlik karmaşası biter, hız başlar.
+                </p>
+            </div>
+        </section>
+
+        <section class="space-y-12">
+            <h2 class="text-4xl font-extrabold text-right flex items-center justify-end gap-4">
+                Gerçek Zamanlı Mal Kabul <span class="text-blue-600 italic">.02</span>
+            </h2>
+            <div class="grid lg:grid-cols-2 gap-10">
+                <div class="order-2 lg:order-1">
+                    <p class="text-xs font-bold text-slate-400 mb-2 uppercase text-right">Süreç Dinamiği</p>
+                    <img src="depo.jpg" class="rounded-2xl shadow-2xl" alt="Depo Çizim">
+                </div>
+                <div class="order-1 lg:order-2">
+                    <p class="text-xs font-bold text-slate-400 mb-2 uppercase">Yazılım Ekranı</p>
+                    <img src="depodurum.jpg" class="rounded-2xl shadow-2xl" alt="Depo Durum">
+                </div>
+            </div>
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="text-xl text-slate-600 italic">
+                    "Tır depoya yanaştığı an, Windows CE terminalleri devreye girer. Okutulan her barkod Mikro'da anlık stok olur; forkliftler halıları adresli raflarına dizerken sistem yerlerini saniyeler içinde kaydeder."
+                </p>
+            </div>
+        </section>
+
+        <section class="space-y-12">
+            <h2 class="text-4xl font-extrabold flex items-center gap-4">
+                <span class="text-blue-600 italic">03.</span> Hibrit Sipariş ve XML Senkronizasyonu
+            </h2>
+            <div class="grid lg:grid-cols-2 gap-10 items-center">
+                <div class="space-y-6">
+                    <p class="text-lg text-slate-700 leading-relaxed border-r-4 border-orange-500 pr-6">
+                        B2B portallardan akan XML servisleri, bayilerin mobil talepleri ve WhatsApp üzerinden gelen manuel girişler... Hepsi dev bir dijital havuzda toplanır.
+                    </p>
+                    <img src="siparisizlem.jpg" class="rounded-xl shadow-lg border border-slate-200" alt="Sipariş İzleme">
+                </div>
+                <img src="siparişler.jpg" class="rounded-3xl shadow-2xl" alt="Sipariş Kanalları">
+            </div>
+        </section>
+
+        <section class="space-y-12 bg-white p-12 rounded-[3rem] shadow-xl border border-slate-100">
+            <div class="flex flex-col md:flex-row justify-between items-end gap-6">
+                <h2 class="text-4xl font-extrabold"><span class="text-blue-600 italic">04.</span> Kesim Sahası: Mustafa İş Başında</h2>
+                <span class="status-pill bg-yellow-700/20 text-yellow-800">STATÜ: OLIVE (KESİMDE)</span>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-10">
+                <img src="kesimci.jpg" class="rounded-2xl shadow-xl" alt="Kesim Sahası">
+                <div class="space-y-8">
+                    <p class="text-xl text-slate-600 italic leading-relaxed">
+                        "Operatörümüz Mustafa, kendi ismini seçip barkodu okuttuğu anda sistem satırı 'Zeytinyağı' (Olive) rengine çevirir. Bu, fabrikanın o anki nabzıdır; kimin hangi halıyı kestiği anlık izlenebilir."
+                    </p>
+                    <img src="siparisizlemkalembazlı.jpg" class="rounded-xl shadow-inner border-2 border-slate-100" alt="Yazılım Takip">
+                </div>
+            </div>
+        </section>
+
+        <section class="space-y-24">
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="step-card bg-white p-6 rounded-3xl shadow-lg border-t-8 border-blue-600">
+                    <p class="text-xs font-black text-blue-600 mb-4 tracking-widest uppercase">Aşama 5: Mavi Statü</p>
+                    <img src="kalite1.jpg" class="rounded-xl mb-6 shadow-md" alt="Kalite 1">
+                    <p class="text-sm text-slate-600">Halı serilir, barkod okutulur ve büyük ekranda resim onaylanır. Sipariş artık 'Mavi'dir; 1. Kalite OK!</p>
+                </div>
+                <div class="step-card bg-white p-6 rounded-3xl shadow-lg border-t-8 border-slate-400">
+                    <p class="text-xs font-black text-slate-500 mb-4 tracking-widest uppercase">Aşama 6: Konfeksiyon</p>
+                    <img src="konfeksiyon.jpg" class="rounded-xl mb-6 shadow-md" alt="Konfeksiyon">
+                    <p class="text-sm text-slate-600">Marka etiketleri vurulur, saçaklar eklenir. Halı son formuna bant üzerinde personelin maharetli ellerinde ulaşır.</p>
+                </div>
+                <div class="step-card bg-white p-6 rounded-3xl shadow-lg border-t-8 border-green-900">
+                    <p class="text-xs font-black text-green-800 mb-4 tracking-widest uppercase">Aşama 7: Koyu Yeşil</p>
+                    <img src="kalite2.jpg" class="rounded-xl mb-6 shadow-md" alt="Kalite 2">
+                    <p class="text-sm text-slate-600">Final kontrolü yapılan halılar 'Koyu Yeşil' rengini alır. Bu renk, 'Hatasız Ürün' demektir.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="space-y-12">
+            <h2 class="text-4xl font-extrabold text-center uppercase tracking-tighter">
+                <span class="text-orange-500">Kapanış:</span> Görünmez Kahramanlar
+            </h2>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="bg-slate-900 text-white p-10 rounded-[3rem] shadow-2xl relative">
+                    <div class="absolute top-6 right-10 text-6xl text-white/5 font-black uppercase">Service</div>
+                    <img src="otomatikevrak.jpg" class="rounded-2xl mb-8 border border-white/20" alt="Servis Çizim">
+                    <h4 class="text-2xl font-bold mb-4 text-orange-400 tracking-tight">Akıllı Belge Motoru</h4>
+                    <p class="text-slate-400 italic">
+                        "Arka planda uyumayan bir servis modülü... Tüm kalemleri tamamlanan siparişleri yakalar, faturaları otomatik döker ve kargo barkodlarını saniyeler içinde hazırlar. Statü artık 'Gri'dir."
+                    </p>
+                </div>
+                <div class="bg-white p-10 rounded-[3rem] shadow-xl border border-slate-200">
+                    <img src="sevkiyat.jpg" class="rounded-2xl mb-8" alt="Sevkiyat">
+                    <h4 class="text-2xl font-bold mb-4 text-blue-900 tracking-tight">7000+ m² Türkiye Yollarında</h4>
+                    <p class="text-slate-600 italic leading-relaxed">
+                        "Barkodları vurulan halılar Aras Kargo kamyonlarına yüklenir. Aynı gün Türkiye'nin her noktasına binlerce metrekare halı, minimum insan müdahalesi ve maksimum doğrulukla yola çıkar."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="navy-gradient text-white py-24 px-6 mt-40">
+        <div class="container mx-auto max-w-5xl">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="space-y-6">
+                    <h3 class="text-5xl font-black italic text-orange-500 uppercase">Gelecek Mikro'da</h3>
+                    <p class="text-xl text-slate-300 font-light leading-relaxed">
+                        Sistemimizdeki her sipariş adımı, her kesim hareketi ve basılan her kargo barkodu <span class="text-white font-bold border-b-2 border-orange-500">Mikro ERP</span> ile canlı ve çift taraflı senkronize çalışır. 
+                    </p>
+                    <div class="flex gap-4">
+                        <span class="bg-white/10 px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-widest">Sipariş Entegrasyonu ✓</span>
+                        <span class="bg-white/10 px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-widest">Evrak Otomasyonu ✓</span>
+                    </div>
+                </div>
+                <div class="bg-white/5 backdrop-blur-sm p-10 rounded-3xl border border-white/10 text-center">
+                    <i class="fas fa-database text-6xl text-orange-500 mb-6"></i>
+                    <p class="text-sm font-mono opacity-60">Sistem Altyapısı: Delphi & SQL Server</p>
+                    <p class="text-sm font-mono opacity-60 mt-2">Geliştirici: Mustafa Ali Dönmez</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
